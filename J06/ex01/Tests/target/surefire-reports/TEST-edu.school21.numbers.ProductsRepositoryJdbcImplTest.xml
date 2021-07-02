@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.034" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/test-classes:/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/classes:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/kiborroq/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/kiborroq/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/hsqldb/hsqldb/2.6.0/hsqldb-2.6.0.jar:/home/kiborroq/.m2/repository/org/springframework/spring-jdbc/5.3.8/spring-jdbc-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-tx/5.3.8/spring-tx-5.3.8.jar:"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="Unknown"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-14-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/surefire/surefirebooter12957506116126352559.jar /home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/surefire 2021-07-01T16-31-22_364-jvmRun1 surefire5779445826827543529tmp surefire_03522351795108049953tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/test-classes:/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/classes:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/kiborroq/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/kiborroq/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/kiborroq/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/kiborroq/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/kiborroq/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/kiborroq/.m2/repository/org/hsqldb/hsqldb/2.6.0/hsqldb-2.6.0.jar:/home/kiborroq/.m2/repository/org/springframework/spring-jdbc/5.3.8/spring-jdbc-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-beans/5.3.8/spring-beans-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-core/5.3.8/spring-core-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-jcl/5.3.8/spring-jcl-5.3.8.jar:/home/kiborroq/.m2/repository/org/springframework/spring-tx/5.3.8/spring-tx-5.3.8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/kiborroq"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="/usr/lib/jvm/java-14-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests/target/surefire/surefirebooter12957506116126352559.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.2+12-Ubuntu-120.04"/>
+    <property name="user.name" value="kiborroq"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.8.0-59-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/kiborroq/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="Unknown"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="user.dir" value="/home/kiborroq/Desktop/git/Java_piscine/J06/ex01/Tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="14.0.2+12-Ubuntu-120.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="delete" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.01"/>
+  <testcase name="update" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.004"/>
+  <testcase name="find_all" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.004"/>
+  <testcase name="save" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.003"/>
+  <testcase name="find_by_id" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.005"/>
+  <testcase name="returned_connection_is_not_null" classname="edu.school21.numbers.ProductsRepositoryJdbcImplTest" time="0.003"/>
+</testsuite>

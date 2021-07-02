@@ -1,0 +1,5 @@
+/home/kiborroq/Desktop/git/Java_piscine/J05/ex01/chat/src/main/java/edu/school21/chat/models/Message.java
+/home/kiborroq/Desktop/git/Java_piscine/J05/ex01/chat/src/main/java/edu/school21/chat/models/User.java
+/home/kiborroq/Desktop/git/Java_piscine/J05/ex01/chat/src/main/java/edu/school21/chat/models/ChatRoom.java
+/home/kiborroq/Desktop/git/Java_piscine/J05/ex01/chat/src/main/java/edu/school21/chat/repositories/MessagesRepositoryJdbcImpl.java
+/home/kiborroq/Desktop/git/Java_piscine/J05/ex01/chat/src/main/java/edu/school21/chat/repositories/MessagesRepository.java
