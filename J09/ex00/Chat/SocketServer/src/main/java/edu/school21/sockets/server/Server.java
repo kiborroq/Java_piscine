@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketOptions;
 
 @Component
 public class Server {
@@ -26,28 +27,9 @@ public class Server {
 			server = new ServerSocket(port);
 			client = server.accept();
 
-			dis = new DataInputStream(client.getInputStream());
-			dos = new DataOutputStream(client.getOutputStream());
+			SocketOptions socketOptions;
+			socketOptions.setOption();
 
-			dos.write("Hello from Server!\n".getBytes());
-			dos.flush();
-
-			String action = dis.readLine();
-
-			dos.write("Enter username:\n".getBytes());
-			dos.flush();
-
-			String login = dis.readLine();
-
-			dos.write("Enter password:\n".getBytes());
-			dos.flush();
-
-			String password = dis.readLine();
-
-			dos.write("Successful!\n".getBytes());
-			dos.flush();
-
-			usersService.signUp(login, password);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -56,5 +38,21 @@ public class Server {
 			dis.close();
 			dos.close();
 		}
+	}
+
+	public boolean sign(boolean signIn) throws IOException {
+		dos.write("Enter username:\n".getBytes());
+		dos.flush();
+
+		String login = dis.readLine();
+
+		dos.write("Enter password:\n".getBytes());
+		dos.flush();
+
+		String password = dis.readLine();
+
+		if (signIn)
+			return usersService.signIn(login, password);
+		return usersService.signUp(login, password);
 	}
 }
